@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #fdf0ff, #f0f9ff);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: #7b2cbf;
+  color: white;
+}
+
+.auth-container {
+  max-width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.auth-container input, .auth-container button {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.container {
+  padding: 30px;
+}
+
+.search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.admin-box {
+  background: white;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  transform: perspective(800px) rotateX(0deg);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: perspective(800px) rotateX(5deg) translateY(-5px);
+}
+
+.card button {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.delete {
+  background: #d00000;
+  color: white;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+}

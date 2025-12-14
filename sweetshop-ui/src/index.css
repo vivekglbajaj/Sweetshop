@@ -1,0 +1,16 @@
+body { font-family: Arial; background:#f4f6fb; margin:0 }
+header { display:flex; justify-content:space-between; padding:15px; background:#6c5ce7; color:white }
+.auth, .admin-form { width:300px; margin:60px auto; padding:20px; background:white; border-radius:10px }
+input, button { width:100%; padding:10px; margin:5px 0 }
+button { background:#6c5ce7; color:white; border:none; cursor:pointer }
+.container { padding:20px }
+.search { width:60%; margin:20px auto; display:block }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px }
+.card {
+  background:white; padding:20px; border-radius:15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.15);
+  transition:transform 0.3s;
+}
+.card:hover { transform:rotateY(5deg) scale(1.05) }
+.delete { background:#d63031 }
+@media(max-width:600px){ .search{width:90%} }

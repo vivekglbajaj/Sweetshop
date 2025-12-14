@@ -1,0 +1,14 @@
+# ===== Backend =====
+target/
+*.log
+*.class
+.env
+
+# ===== Frontend =====
+node_modules/
+dist/
+build/
+
+# ===== OS =====
+.DS_Store
+
